@@ -24,6 +24,14 @@ function ReviewInputs() {
         }
 })}
 
+    return(
+        <>
+            <button onClick={submitFeedback}>
+                Submit
+            </button>
+        </>
+    )
+
 
 }
 
