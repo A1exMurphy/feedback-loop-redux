@@ -33,6 +33,22 @@ function ReviewInputs() {
                 onClick={submitFeedback}>
                 Submit
             </button>
+
+            <h4>
+                feeling: {userInput[0]}
+            </h4>
+                
+            <h4>
+                understanding: {userInput[1]}
+            </h4>
+                
+             <h4>
+                support: {userInput[2]}
+            </h4>
+
+            <h4>
+                comments: {userInput[3]}
+            </h4>
         </>
     )
 
