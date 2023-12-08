@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
 function SupportForm() {
     const cartContents = useSelector(store => store.supportContents)
+    const history = useHistory();
 
     //create local state for holding input value
     let [supportResult, setSupportResult] = useState('');
@@ -21,6 +23,8 @@ function SupportForm() {
                 type: "SAVE_SUPPORT_INPUT",
                 payload: supportResult
             })
+
+            history.push("/comments")
         }
     
     return(

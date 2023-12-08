@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
 function FeelingForm() {
     const cartContents = useSelector(store => store.feelingContents)
+    const history = useHistory();
 
     //create local state for holding input value
     let [feelingResult, setFeelingResult] = useState('');
@@ -21,6 +23,8 @@ function FeelingForm() {
                 type: "SAVE_FEELING_INPUT",
                 payload: feelingResult
             })
+            //to navigate to the next page use useHistory here
+            history.push("/understanding")
         }
     
     return(
