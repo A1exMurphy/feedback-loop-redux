@@ -24,7 +24,7 @@ function CommentsForm() {
                 payload: commentsResult
             })
 
-            history.push("/")
+            history.push("/review")
         }
     
     return(

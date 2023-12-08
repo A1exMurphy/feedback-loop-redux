@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
 function FeelingForm() {
-    const cartContents = useSelector(store => store.feelingContents)
+
     const history = useHistory();
 
     //create local state for holding input value

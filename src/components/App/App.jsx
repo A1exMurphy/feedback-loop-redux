@@ -7,6 +7,7 @@ import FeelingForm from './feeling/feeling';
 import UnderstandingForm from '../understanding/understanding';
 import SupportForm from '../support/support';
 import CommentsForm from '../comments/comments';
+import ReviewInputs from '../review/review';
 
 function App() {
   const dispatch = useDispatch();
@@ -34,6 +35,9 @@ function App() {
             <CommentsForm />
           </Route>
           
+          <Route exact path="/review">
+            <ReviewInputs />
+          </Route>
 
         </header>
       </Router>
