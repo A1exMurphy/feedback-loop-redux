@@ -19,7 +19,7 @@ function FeelingForm() {
     return(
         <>
             {/* <form> */}
-            <input></input>
+            <input type="number"></input>
             {/* </form> */}
         </>
     )
