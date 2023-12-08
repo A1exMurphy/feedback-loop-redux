@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import axios from "axios";
 
-let feedback = {};
 
 
 function ReviewInputs() {
@@ -12,15 +12,19 @@ function ReviewInputs() {
     const history = useHistory();
 
 
-    // axios(
-    //     method: "POST",
-    //     url:,
-    //     data: {
-    //         feeling: userInput[0],
-    //         understanding: userInput[1],
+    const submitFeedback = () => {axios({
+        method: "POST",
+        url: '/feedback',
+        data: {
+            feeling: userInput[0],
+            understanding: userInput[1],
+            support: userInput[2],
+            comments: userInput[3]
 
-    //     }
-    // )
+        }
+})}
+
+
 }
 
 

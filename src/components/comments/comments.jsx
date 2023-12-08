@@ -33,7 +33,7 @@ function CommentsForm() {
             
             <input 
                 data-testid="input" 
-                type="number" 
+                type="text" 
                 onChange={handleInputChange}>
             </input>
 

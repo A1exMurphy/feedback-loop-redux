@@ -9,25 +9,25 @@ const userInput = (state = [], action) => {
         console.log(action.payload, "feelingResult")
 
         return(
-            state + action.payload
+            [...state, action.payload]
         )
     }
     if(action.type === "SAVE_UNDERSTANDING_INPUT") {
 
         return(
-            state + action.payload
+            [...state, action.payload]
         )
     }
     if(action.type === "SAVE_SUPPORT_INPUT") {
 
         return(
-            state + action.payload
+            [...state, action.payload]
         )
     }
     if(action.type === "SAVE_COMMENTS_INPUT") {
 
         return(
-            state + action.payload
+            [...state, action.payload]
         )
     }
     return state;
