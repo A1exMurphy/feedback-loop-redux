@@ -21,8 +21,9 @@ function ReviewInputs() {
             support: userInput[2],
             comments: userInput[3]
 
-        }
-})}
+        }})
+        history.push('/success')
+    }
 
     return(
         <>

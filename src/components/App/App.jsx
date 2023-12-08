@@ -8,6 +8,7 @@ import UnderstandingForm from '../understanding/understanding';
 import SupportForm from '../support/support';
 import CommentsForm from '../comments/comments';
 import ReviewInputs from '../review/review';
+import SuccessScreen from '../success/success';
 
 function App() {
   const dispatch = useDispatch();
@@ -37,6 +38,10 @@ function App() {
           
           <Route exact path="/review">
             <ReviewInputs />
+          </Route>
+
+          <Route exact path="/success">
+            <SuccessScreen />
           </Route>
 
         </header>
