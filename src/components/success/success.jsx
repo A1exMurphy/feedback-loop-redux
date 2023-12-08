@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
@@ -14,7 +13,7 @@ function SuccessScreen() {
 
     return(
         <>
-            <h1>Success</h1>
+            <h1>Thank You!</h1>
             <h3>You have made a feedback submission!</h3>
             <button 
                 data-testid="next"

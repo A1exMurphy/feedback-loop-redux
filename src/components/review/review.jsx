@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+
+import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import axios from "axios";
 
@@ -27,7 +27,7 @@ function ReviewInputs() {
 
     return(
         <>
-            <h2>Review</h2>
+            <h2>review</h2>
             <button 
                 data-testid="next"
                 onClick={submitFeedback}>

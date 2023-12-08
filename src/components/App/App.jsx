@@ -1,7 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
-import { HashRouter as Router, Route, Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter as Router, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
 import FeelingForm from './feeling/feeling';
 import UnderstandingForm from '../understanding/understanding';
@@ -11,7 +9,7 @@ import ReviewInputs from '../review/review';
 import SuccessScreen from '../success/success';
 
 function App() {
-  const dispatch = useDispatch();
+
 
 //use routes to trigger page changes
   return (
