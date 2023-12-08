@@ -20,31 +20,34 @@ function App() {
         <header className='App-header'>
           <h1 className='App-title'>Feedback!</h1>
           <h4>Don't forget it!</h4>
-          <Route exact path="/">
-           <FeelingForm />
-          </Route>
 
-          <Route exact path="/understanding">
-            <UnderstandingForm />
-          </Route>
+          </header>
+            <div>
+              <Route exact path="/">
+              <FeelingForm />
+              </Route>
 
-          <Route exact path="/support">
-            <SupportForm />
-          </Route>
+              <Route exact path="/understanding">
+                <UnderstandingForm />
+              </Route>
 
-          <Route exact path="/comments">
-            <CommentsForm />
-          </Route>
-          
-          <Route exact path="/review">
-            <ReviewInputs />
-          </Route>
+              <Route exact path="/support">
+                <SupportForm />
+              </Route>
 
-          <Route exact path="/success">
-            <SuccessScreen />
-          </Route>
+              <Route exact path="/comments">
+                <CommentsForm />
+              </Route>
+              
+              <Route exact path="/review">
+                <ReviewInputs />
+              </Route>
 
-        </header>
+              <Route exact path="/success">
+                <SuccessScreen />
+              </Route>
+            </div>
+
       </Router>
     </div>
   );

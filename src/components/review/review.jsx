@@ -27,7 +27,10 @@ function ReviewInputs() {
 
     return(
         <>
-            <button onClick={submitFeedback}>
+            <h2>Review</h2>
+            <button 
+                data-testid="next"
+                onClick={submitFeedback}>
                 Submit
             </button>
         </>

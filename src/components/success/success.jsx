@@ -14,8 +14,13 @@ function SuccessScreen() {
 
     return(
         <>
-            <h3>Successful Submission!</h3>
-            <button onClick={newFeedback}>New Feedback</button>
+            <h1>Success</h1>
+            <h3>You have made a feedback submission!</h3>
+            <button 
+                data-testid="next"
+                onClick={newFeedback}>
+                    New Feedback
+            </button>
         </>
     )
 }
