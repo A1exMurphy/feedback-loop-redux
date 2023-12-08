@@ -2,30 +2,30 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 
-function FeelingForm() {
-    const cartContents = useSelector(store => store.feelingContents)
+function UnderstandingForm() {
+    const cartContents = useSelector(store => store.understandingContents)
 
     //create local state for holding input value
-    let [feelingResult, setFeelingResult] = useState('');
+    let [understandingResult, setUnderstandingResult] = useState('');
 
     const dispatch = useDispatch();
 
         //function to update local state with user input
         const handleInputChange = (event) => {
-            setFeelingResult(event.target.value)
+            setUnderstandingResult(event.target.value)
         };
 
-        const submitFeelingInput = () => {
-            console.log('feeling submit button', feelingResult)
+        const submitUnderstandingInput = () => {
+            console.log('understanding submit button', understandingResult)
             dispatch({
-                type: "SAVE_FEELING_INPUT",
-                payload: feelingResult
+                type: "SAVE_UNDERSTANDING_INPUT",
+                payload: understandingResult
             })
         }
     
     return(
         <>
-        <label>feeling</label>
+        <label>understanding</label>
             
             <input 
                 data-testid="input" 
@@ -35,7 +35,7 @@ function FeelingForm() {
 
             <button 
                 data-testid="next"
-                onClick={submitFeelingInput}
+                onClick={submitUnderstandingInput}
             >Next
             </button>
 
@@ -43,4 +43,4 @@ function FeelingForm() {
     )
 }
 
-export default FeelingForm;
+export default UnderstandingForm;
